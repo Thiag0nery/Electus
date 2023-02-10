@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+html,body{
+    height: 100%;
+    background-color: #edebe8;
+
+
+}
+
+header{
+    width: 100%;
+    height: 13.5vh;
+    background-color: #f78e0c;
+    padding: 10px 4rem;
+    display: flex;
+    position: fixed;
+    box-shadow: 0 0 1rem 0.3rem black;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    background-image: url('../Imagens/Logo.png');
+    width: 14vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 8vh;
+}
+header ul{
+   display: flex;
+   gap: 40px;
+}
+header li{
+    list-style: none;
+}
+.color-text{
+    color: white;
+    transition: 2s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+header li a:hover{
+    font-weight: 800;
+}
+/* ------ */
+.containerMain{
+    display: flex;
+    
+    padding: 10rem  6rem ;
+}
+.box1{
+    background-color: #f78e0c;
+    width: 60%;
+
+}
+.box2{
+    background-color: white;
+    width: 60%;
+}
+.boxTabelas{
+    display: flex;
+}
+
+#btnVoltar{
+   display: flex;
+   margin: 0 auto;
+}
+.containerVoltar{
+    padding: 1rem;
+}
+.imgVoltar{
+    background-image: url('/dados/dados/src/main/resources/static/Imagens/seta-para-a-esquerda.png');
+    width: 20px;
+    height: 20px;
+}
+.Voltar{
+ 
+        margin-left: 5px;
+}
+.itensTitulo{
+    padding: 7rem 2rem 9rem 2rem;
+    
+   
+}
+.tituloBox2{
+    text-align: center;
+    padding: 2rem;
+}
+#nome{
+    text-align: center;
+    font-size: 40px;
+}
+.inform-vaga1 {
+    margin-top: 50px;
+    text-align: center;
+ }
+#empresa{
+    font-size: 20px;
+    margin-top: 2rem;
+    text-align: center;
+}
+ .inform-vaga {
+    margin-top: 15px;
+ }
+ .DescVaga{
+    padding: 0rem 2rem 1rem 1rem;
+    
+ }
+ #desc,#habTec,#habilidade,#experiencia,#formacao,#atribuicao,#tel,#endereco,#uf,#cidade{
+    font-weight: 500;
+ }
+ .boxTabelas{
+    padding: 0rem 1rem 0rem 1rem;
+    justify-content: space-around;
+    font-size: 18px;
+ }
+ .btnInscreva{
+    padding: 10rem 0rem 1rem 0rem;
+    text-align: center;
+
+    
+ }
+ #Enviar{
+    width: 95%;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+ 
+ 
+ }
+  #Enviar:hover{
+transition: 0.8s;
+    background-color: #f78e0c;
+
+ } 
+
+/* ----- */
+.container-vaga{
+    width: 100%;
+    padding: 9rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+.box-vaga{
+    width: 100%;
+    background-color: aliceblue
+}
+.roda{
+
+
+width: 50px;
+height: 50px;
+background-color: white;
+border-radius: 100%;
+display: flex;
+
+}
+.titulo-vaga{
+    padding: 2rem;
+    text-align: center;
+    background-color: #f78e0c;
+}
+.informacoes{
+    background: #edebe8;
+    padding: 8px;
+    font-size: 15pt;
+}
+.d-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.inform-vaga p{
+    display: inline;
+}
+
+

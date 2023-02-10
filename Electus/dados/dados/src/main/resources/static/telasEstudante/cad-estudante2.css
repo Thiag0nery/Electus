@@ -1,0 +1,329 @@
+/* Geral codicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+html,
+body {
+    height: 100%;
+
+}
+
+header {
+    width: 100%;
+    height: 13.5vh;
+    background-color: #f78e0c;
+    padding: 10px 4rem;
+    display: flex;
+    box-shadow: 0 0 1rem 0.3rem black;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-image: url('../Imagens/Logo.png');
+    width: 12vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 11vh;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+
+header li a:hover {
+    font-weight: 800;
+}
+/* ----------- */
+main {
+
+}
+.Box1{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(241, 241, 241);
+}
+.Box2{
+    width: 100%;
+    background-color: #f78e0c;
+    height: 90vh;
+}
+.d-flex{
+        display: flex;
+    
+}
+.caixaConteudo{
+    width: 100%;
+ 
+}
+.roda {
+    background-color: #f78e0c;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+
+}
+.tituloCadastro{
+    font-size: 25px;
+}
+.caixaBox{
+    position: relative;
+    top: -60vh;
+    padding: 15px;
+    background-color: white;
+    width: 40vw;
+    text-align: center;
+    margin: 0 auto;
+}
+.itens-box {
+    text-align: left;
+    padding: 20px 40px;
+}
+.barra{
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.btn-cadastrar {
+    border: none;
+    display: block;
+    width: 50%;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 3%;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #f78e0c;
+    margin: 0 auto;
+   
+}
+.label-input {
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+}
+.inputUser {
+    width: 100%;
+    padding: 0 5px;
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+    font-weight: 500;
+}
+#sexo-outro {
+    margin-bottom: 5%;
+}
+
+#cpf {
+    width: 48.5%;
+}
+
+#telefone {
+    width: 50%;
+}
+
+#n-casa {
+    width: 28%;
+}
+
+#endereco {
+    width: 70%;
+}
+
+#modulo {
+    width: 30%;
+    display: block;
+    justify-content: flex-start;
+    
+}
+.modulo-periodo{
+    display: flex;
+    justify-content: space-between;
+}
+#turno {
+    width: 34%;
+
+}
+a {
+    text-decoration: none;
+}
+.Teste4 {
+    display: none;
+}
+.btn-cadastrar:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+#nova-senha {
+
+    width: 49%;
+}
+#senha {
+    width: 49%;
+}
+.margin {
+    margin-top: 10%;
+}
+/* ---------- */
+@media (max-width: 2000px) {
+    .box {
+        width: 40vw;
+        height:52rem;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .box {
+        width: 58vw;
+        height: 53rem;
+    }
+    .margin {
+        margin-top: 5%;
+    }
+    .backgraund-img {
+        height: 160vh;
+        width: 100%;
+    }
+
+    .opacity {
+        height: 160vh;
+    }
+
+    .Teste4 {
+        display: block;
+    }
+}
+
+@media (max-width: 1100px) {
+    .box {
+        width: 48vw;
+        height:52rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .box {
+        width: 55vw;
+        height: 52rem;
+    }
+
+    .inputUser1 {
+        width: 100%;
+        padding: 0 5px;
+        height: 25px;
+        font-size: 15px;
+        border: none;
+        background: none;
+        outline: none;
+        position: relative;
+        border-bottom: 1px solid black;
+        margin: 15px 0;
+        font-weight: 500;
+    }
+
+    .Teste4 {
+        display: block;
+    }
+}
+@media (max-width: 850px){
+    .caixaRodape {
+     width: 100%;
+     display: block;
+     padding: 4% 1.5%;
+     height: 73vh;
+    }
+    .caixaRodape .logo {
+     width: 25vw;
+     height: 25vh;
+     margin: 15px auto;
+     }
+    .footer-inform {
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 35px;
+     
+     }
+     .caixaRodape ul {
+        font-size: 9pt;
+        text-align: center;
+    }
+     .caixaRodape ul li {
+         font-size: 9pt;
+         text-align: center;
+     }
+     .caixaRodape .footer-inform h4 {
+         font-size: calc(5pt + 2vw);
+     }
+ }
+@media (max-width: 730px) {
+    .box {
+        width: 60vw;
+        height:52rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .box {
+        width: 70vw;
+        height:52rem;
+    }
+}
+
+@media(max-width: 572px) {
+    .box {
+        width: 80vh;
+        height: 56rem;
+
+    }
+
+    #tel {
+        display: block;
+    }
+
+    #telefone {
+        width: 100%;
+    }
+
+    #cpf {
+        width: 100%;
+    }
+
+    #modulo {
+        width: 50%;
+    }
+
+    #turno {
+        width: 100%;
+    }
+}

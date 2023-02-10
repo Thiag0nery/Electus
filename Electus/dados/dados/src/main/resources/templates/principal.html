@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/principalCss.css}">
+    <link rel="stylesheet" th:href="@{/Styles/Menu.css}">
+    <title>Principal</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+<body>
+    <header id="header">
+        <div class="logo"></div>
+        <div id="hamburg-mobile"></div>
+            <nav id="navegacao">
+                <ul id="mobile">
+                    <li  th:if="${session.aluno != null}"><a th:href="|/perfil-estudante/${session.aluno.id}|" id="link-1" >Meu perfil</a></li>
+                    <li  th:if="${session.empresa != null}"><a th:href="|/perfil-empresa/${session.empresa.id}|" id="link-2" >Meu perfil</a></li>
+                    <hr class="linha-mobile">
+                  
+                    <li><a href="/index" id="link-3">Sair</a></li>
+                </ul>
+            </nav>     
+        
+    </header>
+    <main>
+            <!-- <div class="caixaImg">
+                <img th:src="@{/Imagens/principal-vaga1.jpg}" alt="">
+                    <div class="itemTitulo">
+                <h1 class="tituloMain">Encontre sua vaga e transforme sua carreira profissional!</h1>
+            </div>
+            </div> -->
+            <div id="slider">
+                <div class="selected">
+                    <img th:src="@{../Imagens/principal-vaga1.jpg}" alt="">
+                   
+                   
+                </div>
+                <texto>
+                        
+                    <container>
+                        <h1>Encontre sua vaga e transforme sua carreira profissional!</h1>   
+                   
+                    </container>
+                </texto>
+                
+             </div>
+        <!-- <div id="slider">
+         
+            <img th:src="@{/Imagens/principal-vaga1.jpg}" alt="">
+       
+        <texto>
+                
+            <container>
+                <h1>Encontre a sua vaga!</h1>
+
+            </container>
+        </texto>
+        
+         </div> -->
+     
+<div th:if="${session.aluno != null}">
+     <div class="container-vagas">
+        <h1 class="titulo-vaga">Vagas disponiveis <span th:text="${session.aluno.curso}"></span></h1>
+        <div class="container-flex-primeiro">
+           
+            <div th:each=" cont : ${lista}"  id="vagas"  th:if="${cont.area} == ${session.aluno.curso}">
+                
+                <div th:if="${session.aluno.curso} == ${cont.area}">
+                    <div class="vagas" >
+                    <a th:href="|/Vagaselecionada/${cont.id}/${session.aluno.id}|">
+                        <div class="caixa-vagas">
+                            <div class="roda"></div>
+
+                            <h3 th:text="${cont.area}" id="nome"></h3>
+                        <h4 th:text="${cont.tarefas}" id="tarefas" ></h4>
+                        <h4 th:text="${cont.departamento}" id="departamento" style="display: none;"></h4>
+                        <p th:text="${cont.cbo}" id="cbo" style="display: none;"></p>
+                        </div>
+                       
+                            <div class="bg-color">
+                                <div class="bg"></div>
+                              
+                                    
+                            </div>
+                           
+                        </a>
+                    </div>
+            </div>
+
+               
+                
+            
+            </div>
+            <div th:each="lista : ${lista}" id="Ta" return th:if="${lista.area} eq ${session.aluno.curso} eq false">
+               
+                <div class="semVaga" >
+                    <h2 >Nenhuma vaga a mais</h2>
+                </div>
+            </div>
+           
+        </div>
+
+     </div>
+</div> 
+ 
+<div th:if="${session.empresa != null}">
+<div class="container-vagas">
+   
+    <div class="container-flex">
+       
+        <div  class="vagas" >
+           
+            <div class="caixa-vagas">
+                <div class="roda"></div>
+
+                <h3 id="Instituicaonome">Visitar instituição</h3>
+            </div>
+          
+                <div class="bg-color">
+                    
+                    <div class="bg"></div>
+                   
+                </div>
+                <a th:href="|/instituicao/${session.empresa.id}|" class="instituicao">Visitar</a>
+                
+        </div>
+
+        
+
+        
+    </div>
+</div> 
+</div> 
+
+
+<div th:if="${session.aluno != null}">
+
+    <hr class="divisao">
+
+    <h1 class="titulo-vaga">Todas as vagas</span></h1>
+    <div class="container-flex">
+       
+        <div th:each=" cont : ${lista}" class="vagas" id="vagas" th:if="${session.aluno != null}">
+            <a th:href="|/Vagaselecionada/${cont.id}/${session.aluno.id}|" class="link">
+            <div class="caixa-vagas">
+                <div class="roda"></div>
+
+                <h3 th:text="${cont.area}" id="nome"></h3>
+            <h4 th:text="${cont.tarefas}" id="tarefas"></h4>
+            <p th:text="${cont.cbo}" id="cbo" style="display: none;"></p>
+            </div>
+          
+                <div class="bg-color">
+                    
+                    <div class="bg"></div>
+                    <!-- <div class="infor">
+                        <div class="informacoes espaco">
+               
+                            <div class="contato">
+                                <div class="informacoes">
+                                    <p>Empresa:</p>
+                                    <p th:text="${cont.nome}"></p>
+                                </div>
+                                <div class="informacoes"></div>
+                               <div class="d-flex">
+                                <div class="informacoes">
+                                    <p>Tarefas: </p>
+                                    <p th:text="${cont.tarefas}"></p>
+                                </div>  
+        
+                                <div class="informacoes">
+                                    <p>Telefone: </p>
+                                    <p th:text="${cont.tell}"></p>
+                                </div>
+                               </div>
+                               
+                               </div>
+                           </div>
+                    
+                            <div class="informacoes espaco">
+                               
+        
+                                <p>Cidade: </p>
+                                <p th:text="${cont.cidade}"></p>
+                            </div>    
+                    </div>       -->
+                   
+                     
+                </div>
+               
+            </a>
+        </div>
+
+        <div th:each=" cont : ${lista}" class="vagas" id="vagas" th:if="${session.empresa != null}">
+            <a th:href="|/Vagaselecionada/${cont.id}/${session.empresa.id}|" class="link">
+            <div class="caixa-vagas">
+                <div class="roda"></div>
+
+                <h3 th:text="${cont.area}" id="nome"></h3>
+            <h4 th:text="${cont.tarefas}" id="tarefas"></h4>
+            <p th:text="${cont.cbo}" id="cbo" style="display: none;"></p>
+            </div>
+           
+                <div class="bg-color">
+                    
+                    <div class="bg"></div>
+                    <!-- <div class="infor">
+                        <div class="informacoes espaco">
+               
+                            <div class="contato">
+                                <div class="informacoes">
+                                    <p>Empresa:</p>
+                                    <p th:text="${cont.nome}"></p>
+                                </div>
+                                <div class="informacoes"></div>
+                               <div class="d-flex">
+                                <div class="informacoes">
+                                    <p>Tarefas: </p>
+                                    <p th:text="${cont.tarefas}"></p>
+                                </div>  
+        
+                                <div class="informacoes">
+                                    <p>Telefone: </p>
+                                    <p th:text="${cont.tell}"></p>
+                                </div>
+                               </div>
+                               
+                               </div>
+                           </div>
+                    
+                            <div class="informacoes espaco">
+                               
+        
+                                <p>Cidade: </p>
+                                <p th:text="${cont.cidade}"></p>
+                            </div>    
+                    </div>       -->
+                   
+                     
+                </div>
+               
+            </a>
+        </div>
+
+        
+    </div>
+</div>
+    
+       
+       
+       
+       
+   
+    </main>
+    <footer class="rodape">
+        <div class="caixaRodape">
+            <div class="logo"></div>
+            <div class="footer-inform">
+                <ul>
+                    <h4>Geral</h4>
+                    <li>Cadastre-se</li>
+                    <li>Centrar de Ajuda</li>
+                    <li>Sobre</li>
+                </ul>
+                <ul>
+                    <h4>Navegar pelo Electrus</h4>
+                    <li>Leading</li>
+                    <li>Vagas</li>
+                    <li>Salario</li>
+                </ul>
+                <ul>
+                    <h4>Soluções Business</h4>
+                    <li>Talentos</li>
+                    <li>Marketing</li>
+                    <li>Vendas</li>
+                </ul>
+                <ul>
+                    <h4>Diretórios</h4>
+                    <li>Usuarios</li>
+                    <li>Vagas</li>
+                    <li>Empresas</li>
+                    <li>Soluções</li>
+                    <li>Publicações</li>
+                    <li>Artigos</li>
+                </ul>
+
+                <ul>
+                    <h4>Programadores</h4>
+                    <li><a href="https://github.com/Alsn2200">Alisson Brito</a></li>
+                    <li><a href="">Beatriz Rodrigues</a></li>
+                    <li><a href="https://github.com/FellipeS13">Felipe do Santos</a></li>
+                    <li><a href="https://github.com/Thiag0nery">Thiago Nery</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script th:src="@{/btnMenu-scripts/Script-hamburg.js}"></script>
+   
+    <script th:if="${session.empresa != null}" th:src="@{/Electus_Scripts/principalEmpresa.js}"></script>
+    <script th:if="${session.aluno != null}" th:src="@{/Electus_Scripts/principalEstudante.js}"></script>
+</body>
+</html>

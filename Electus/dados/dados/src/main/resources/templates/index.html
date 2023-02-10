@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Principal</title>
+    <link th:href="@{/index.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/Styles/Menu.css}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo"></div>
+        <div id="hamburg-mobile"></div>
+            <nav id="navegacao">
+                <ul id="mobile">
+                    <li><a href="/login-docente" id="link-1">Docente</a></li>
+                    <hr class="linha-mobile">
+                    <li><a href="/Login-estudante" id="link-2">Estudante</a></li>
+                    <hr class="linha-mobile">
+                    <li><a href="/Login-empresa" id="link-3" >Empresa</a></li>
+                    <hr class="linha-mobile">
+                    
+                </ul>
+            </nav>     
+        
+    </header>
+    <main>
+        
+
+        <div id="slider">
+            <div class="selected">
+                <img th:src="@{../Imagens/Img-fundo.jpeg}" alt="">
+               
+               
+            </div>
+            <texto>
+                    
+                <container>
+                    <h1>Moldamos o caminho, você faz o trajeto!</h1>
+
+                <p>A Electus é uma plataforma digital linkada á instituição de ensino, criada para ajudar estudantes a encontrar vagas de estágio de maneira facilitada. Bem como, auxiliar empresas a identificar profissionais com perfis adequados às vagas.</p>
+
+                <a href="#servicos-titolo"><button type="button" class="button-inform">SAIBA MAIS</button></a>
+                </container>
+            </texto>
+            <div >
+                <img th:src="@{../Imagens/principal-vaga1.jpg}" alt="">
+            </div>
+            <div >
+                <img th:src="@{../Imagens/principal-vaga2.jpg}" alt="">
+            </div>
+         </div>
+        <div class="container-box1">
+           
+                <div class="caixa-box">
+                    <div class="roda"></div>
+                    <a href="/Login-estudante">
+                    <!-- <div class="estudante">
+                        <div class="opacity-estudante"></div>
+                    </div> -->
+                    <div class="title-box">
+
+                        <h1 class="titulo-estudante">Login do Estudante</h1>
+                        <p class="sub-titulo">Cadastre-se já, e comece sua trajetória com a Electus ! Aqui você constroe o seu currículo e tem acesso a vagas de emprego e estágio na sua área de atuação! </p>
+
+                    </div>
+                    <div class="quadrado"></div>
+                </a>
+                </div>
+          
+            
+                <div class="caixa-box">
+                    <div class="roda"></div>
+
+                    <a href="/Login-empresa">
+                    <!-- <div class="empresa">
+                        <div class="opacity-empresa"></div>
+                    </div> -->
+                    <h1 class="titulo-estudante">Login da Empresa</h1>
+                    <p class="sub-titulo"> Cadastre sua empresa e faça parte da Electus! Aqui você divulga oportunidades e capta profissionais compativeis ao seu ambiente organizacional.</p>
+                    </a>
+                    <div class="quadrado">
+                        
+                    </div>
+                </div>
+           
+        </div>
+
+        <div class="Titulo">
+            <h2 id="servicos-titolo">Serviços</h2>
+            <p>Conheça nosso portifolio de serviços</p>
+        </div>
+        <div class="Conteiner-portfolio" id="servicos-portifolio" >
+            
+            <div class="box-flex">
+                <div class="box-portifolio">
+                    <img src="imagens/alunos.png" alt="" class="img">
+                    <div class="text-box">
+                        <h4>Criação de perfis estudantis e empresarias. </h4>
+                        <p>Através da Electus, tanto empresa quanto estudante podem ter perfis individualizados correspondentes aos interesses do usuario.</p>
+                        <!-- <a href="#">Saiba mais</a> -->
+                    </div>
+                </div>
+
+                <div class="box-portifolio">
+                    <img src="imagens/carteira-de-identidade.png" alt="" class="img">
+                    <div class="text-box">
+                        <h4> Elaboração de currículo.</h4>
+                        <p>Com as informações adicionadas ao perfil estudantil, um currículo é desenvolvido, contando com a possibilidade de adesão de certificados, artigos e projetos desenvolvidos durante o curso.</p>
+                            <!-- <a href="#">Saiba mais</a> -->
+                    </div>
+                </div>
+
+                <div class="box-portifolio">
+                    <img src="Imagens/desenvolvimento-de-habilidades.png" alt="" class="img">
+                    <div class="text-box">
+                        <h4>Avaliação por competências. </h4>
+                        <p>Na Electus, os alunos são avaliados de acordo com o potencial que possuem. Assim, as notas não são o único vetor para definição de um perfil profissional.</p>
+                            <!-- <a href="#">Saiba mais</a> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+           
+            <div class="Conteiner-portfolio" id="servicos-portifolio" >
+                <div class="box-flex">
+                <div class="box-portifolio">
+                    <img src="Imagens/aperto-de-mao copy.png" alt="" class="img">
+                    <div class="text-box">
+                        <h4>Processos seletivos facilitados. </h4>
+                        <p>A Electus minimiza redirecionamentos e gerencia talentos de acordos as atribuições. Desse modo, identificar um profissional compatível com a vaga ofertada torna-se menos complexo.</p>
+                            <!-- <a href="#">Saiba mais</a> -->
+                    </div>
+
+                </div>
+                <div class="box-portifolio">
+                    <img src="Imagens/companhia copy.png" alt="" class="img">
+                    <div class="text-box">
+                        <h4>Oferecimento de vagas de estágio e emprego.</h4>
+                        <p>Através da Electus, empresas parceiras podem divulgar oportunidades a fim de captar profissionais com habilidades compatíveis a organização.</p>
+                            <!-- <a href="#">Saiba mais</a> -->
+                    </div>
+                </div>
+                <div class="box-portifolio">
+                    <img src="Imagens/trofeu.png" alt="" class="img">
+                    <div class="text-box">
+                        <h4>Competencias</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iure id voluptatum ut rerum
+                            sunt, ratione, neque dolores, assumenda </p>
+                            <!-- <a href="#">Saiba mais</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+
+
+    </main>
+    <footer class="rodape">
+        <div class="caixaRodape">
+            <div class="logo"></div>
+            <div class="footer-inform">
+                <ul>
+                    <h4>Geral</h4>
+                    <li>Cadastre-se</li>
+                    <li>Centrar de Ajuda</li>
+                    <li>Sobre</li>
+                </ul>
+                <ul>
+                    <h4>Navegar pelo Electrus</h4>
+                    <li>Leading</li>
+                    <li>Vagas</li>
+                    <li>Salario</li>
+                </ul>
+                <ul>
+                    <h4>Soluções Business</h4>
+                    <li>Talentos</li>
+                    <li>Marketing</li>
+                    <li>Vendas</li>
+                </ul>
+                <ul>
+                    <h4>Diretórios</h4>
+                    <li>Usuarios</li>
+                    <li>Vagas</li>
+                    <li>Empresas</li>
+                    <li>Soluções</li>
+                    <li>Publicações</li>
+                    <li>Artigos</li>
+                </ul>
+
+                <ul>
+                    <h4>Programadores</h4>
+                    <li><a href="https://github.com/Alsn2200">Alisson Brito</a></li>
+                    <li><a href="">Beatriz Rodrigues</a></li>
+                    <li><a href="https://github.com/FellipeS13">Felipe do Santos</a></li>
+                    <li><a href="https://github.com/Thiag0nery">Thiago Nery</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script th:src="@{/btnMenu-scripts/Script-index.js}"></script>
+    <script th:src="@{/btnMenu-scripts/Script-hamburg.js}"></script>
+</body>
+
+</html>

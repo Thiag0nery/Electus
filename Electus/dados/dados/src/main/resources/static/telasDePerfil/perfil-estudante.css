@@ -1,0 +1,563 @@
+/* Geral codicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #f78e0c;
+}
+
+header {
+    width: 100%;
+    height: 13.5vh;
+    padding: 10px 4rem;
+    display: flex;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-image: url('../Imagens/Logo.png');
+    width: 12vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 11vh;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+
+    font-size: 15pt;
+}
+
+header li a:hover {
+    font-weight: 800;
+}
+
+.header-titulo {
+    display: flex;
+    font-size: 40px;
+    text-align: center;
+    margin-right: 25vw;
+}
+
+/* MAIn */
+main {
+  
+    background-color: white;
+
+}
+
+.containerMain {}
+
+.itenBox1 {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(241, 241, 241);
+}
+
+.itenBox2 {
+    width: 100%;
+    background-color: #f78e0c;
+}
+
+.caixaBox2 {
+    position: relative;
+    top: -20vh;
+    margin-left: 5rem;
+    padding: 45px;
+    background-color: white;
+    width: 75vw;
+
+}
+
+.roda {
+    background-color: #f78e0c;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: block;
+
+}
+
+#Nome-aluno{
+    margin-top: 2vh;
+    font-size: 80px;
+}
+.caixaConteudo{
+    width: 40vw;
+
+}
+.caixaImagem{
+    display: block;
+  
+   
+}
+#imagemPerfil{
+    width: 30vw;
+    background-image: url('../Imagens/icone-utilisateur-gris.png');
+    background-position: center;
+    background-size: contain;
+    border: none;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 100%;
+}
+.descricao{
+    margin-bottom: 10vh;
+}
+.tituloFoto{
+    text-align: center;
+    margin-top: 135px;
+}
+#arquivoImg{
+    margin-left: 60px;
+}
+#enviando{
+    background-color: #f78e0c;
+    color: black;
+    width: 5rem;
+    height: 5vh;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+  
+    margin-top: 2vh;
+    
+}
+#enviando:hover{
+    transition: .2s;
+    background-color: #f78d0c49;
+}
+.colunaDados{
+    display: flex;
+}
+.coluna1{
+    display: block;
+    margin-right: 50px;
+}
+.coluna2{
+    display: block;
+}
+.itenColuna{
+    display: flex;
+    margin-top: 5px;
+    
+}
+#modulo, #curso , #endereco, #periodo, #sexo, #numero_telefone , #cpf, #data_nascimento,  #numero_casa{
+    font-weight: 500;
+    margin-left: 5px;
+}
+.editarperfil{
+    margin-top: 90px;
+}
+.caixaBotoes{
+    display: flex;
+}
+.boxVerVagas{
+    display: block;
+    
+}
+.pdf-exemplo{
+    width: 100%;
+    height: 25rem;
+    border: 1px solid black;
+}
+.pdf-flex{
+    display: flex;
+ 
+    padding: 1rem 1rem 2rem 1rem;   
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.pdf1{
+    display: flex;
+    width: 58%;
+    flex-direction: column;
+}
+.btn-baixar{
+    text-align: center; 
+    background-color: #f78e0c;
+    color: black;
+    width: 6rem;
+    height: 2.5rem;
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 7px auto;
+    justify-content: center;
+    align-items: center;
+
+}
+#imgSeta{
+    width: 25px;
+  
+}
+.containerBotoes{
+    display: flex;
+    margin-top: 90px;
+    justify-content: space-between;
+}
+.fundoBtn{
+    width: 3rem;
+    height: 6vh;
+    background-color: #f78e0c;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: 2vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fundoBtn:hover{
+    transition: .2s;
+    background-color: #f78d0c49;
+}
+.barra{
+    
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    border-radius: 20%;
+    height: 1px;
+    background-color: black;
+}
+.d-flex{
+    display: flex;
+}
+.containerArquivo{
+    display: flex;
+}
+.boxArquivos{
+    width: 40vw;
+}
+.tituloAvaliacao{
+    text-align: center;
+}
+
+/* FOOTER */
+.caixaRodape {
+    width: 100%;
+    display: flex;
+    padding: 4% 1.5%;
+    height: 40vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-top: 1px solid black;
+}
+
+.caixaRodape .logo {
+    width: 25vw;
+    height: 28vh;
+}
+
+.footer-inform {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.caixaRodape ul {
+    list-style: none;
+}
+
+.caixaRodape .footer-inform h4 {
+    font-size: calc(5pt + 1vw);
+}
+
+.caixaRodape ul li {
+    font-size: 9pt;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.div {
+    width: 15rem;
+    height: 20rem;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247 142 12);
+}
+
+.marias {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+#btn1 {
+    width: 8rem;
+    height: 2rem;
+    background-color: aquamarine;
+}
+
+#btn2 {
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(255, 19, 19);
+}
+
+#btn3 {
+    width: 8rem;
+    height: 2rem;
+    background-color: rgb(66, 233, 24);
+}
+
+.titulo {
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+}
+
+.avaliacao,.avaliacao2,.avaliacao3,.avaliacao4,.avaliacao5,.avaliacao6,.avaliacao7,.avaliacao8 {
+    display: flex;
+}
+
+.codificacao {
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 40px;
+}
+
+.codificacao::before {
+    content: "\2605";
+}
+
+.codificacao.ativo~.codificacao::before {
+    content: "\2606";
+}
+
+.desenvolvimento {
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 40px;
+}
+
+.desenvolvimento::before {
+    content: "\2605";
+}
+
+.desenvolvimento.ativo~.desenvolvimento::before {
+    content: "\2606";
+}
+
+.realizacao {
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 40px;
+}
+
+.realizacao::before {
+    content: "\2605";
+}
+
+.realizacao.ativo~.realizacao::before {
+    content: "\2606";
+}
+
+.implementacao {
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 40px;
+}
+
+.implementacao::before {
+    content: "\2605";
+}
+
+.implementacao.ativo~.implementacao::before {
+    content: "\2606";
+}
+
+.documentacao{
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 40px;
+}
+
+.documentacao::before {
+    content: "\2605";
+}
+
+.documentacao.ativo~.documentacao::before {
+    content: "\2606";
+}
+
+.Correcao_Programa{
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 40px;
+}
+
+.Correcao_Programa::before {
+    content: "\2605";
+}
+
+.Correcao_Programa.ativo~.Correcao_Programa::before {
+    content: "\2606";
+}
+
+
+
+.alteracao_armazenamento::before {
+    content: "\2605";
+}
+
+.alteracao_armazenamento.ativo~.alteracao_armazenamento::before {
+    content: "\2606";
+}
+
+.align-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.semValidacao{
+    text-align: center;
+    color: rgb(214, 14, 14);
+    font-size: 25px;
+}
+
+.atualizacao_Documentacao::before {
+    content: "\2605";
+}
+
+.atualizacao_Documentacao.ativo~.atualizacao_Documentacao::before {
+    content: "\2606";
+}
+
+
+
+.codificacao,.desenvolvimento,.realizacao,.implementacao,.documentacao,.Correcao_Programa,.alteracao_armazenamento,.atualizacao_Documentacao{
+    list-style-type: none;
+    cursor: pointer;
+    color: #ffa500;
+    font-size: 31px;
+  }
+#formImg{
+    text-align: center;
+}
+@media (max-width: 1210px) {
+    .d-flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    #arquivoImg {
+         margin:0 auto; 
+    }
+    #formImg{
+        text-align: center;
+    }
+    #imagemPerfil {
+        width: 300px;
+        background-image: url(../Imagens/icone-utilisateur-gris.png);
+        background-position: center;
+        background-size: contain;
+        border: none;
+        background-repeat: no-repeat;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 100%;
+    }
+    .caixaBox2 {
+        position: relative;
+        top: -20vh;
+        /* margin-left: 5rem; */
+        margin: 0 2rem;
+        padding: 45px;
+        background-color: white;
+        width: 90%;
+    }
+}
+@media (max-width: 1100px){
+    .roda {
+        display: none;
+    }
+    .caixaConteudo {
+        width: 100%;
+    }
+    .tituloFoto {
+        text-align: center;
+        margin-top: 79px;
+    }
+    .itenColuna {
+        display: flex;
+        margin-top: 11px;
+    }
+    .colunaDados {
+        display: block;
+    }
+}
+@media (max-width: 860px){
+    .containerArquivo {
+        display: block;
+    }
+    .pdf1 {
+       
+        width: 100%;
+      
+    }
+    .tituloArquivos{
+        text-align: center;
+    }
+    .boxArquivos {
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .containerArquivo {
+        display: block;
+    }
+    .pdf1 {
+       
+        width: 100%;
+      
+    }
+    .tituloArquivos{
+        text-align: center;
+    }
+    .boxArquivos {
+        width: 100%;
+    }
+}

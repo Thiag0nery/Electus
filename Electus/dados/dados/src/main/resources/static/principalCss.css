@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+html,body{
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+
+
+}
+.link-instituicao{
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+#Instituicaonome{
+    text-align: center;
+}
+.instituicao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 85%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-top: 3%;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #f78e0c;
+}
+header{
+    width: 100%;
+    height: 13.5vh;
+    background-color: #f78e0c;
+    padding: 10px 4rem;
+    display: flex;
+    position: fixed;
+    box-shadow: 0 0 1rem 0.3rem black;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    background-image: url('Imagens/Logo.png');
+    width: 14vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 8vh;
+}
+header ul{
+   display: flex;
+   gap: 40px;
+}
+header li{
+    list-style: none;
+}
+.color-text{
+    color: white;
+    transition: 2s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+header li a:hover{
+    font-weight: 800;
+}
+.color-text{
+    color: white;
+    transition: 2s;
+}
+.hover{
+    background-color: #1b1b1bcb;
+}
+/* header */
+
+#slider{
+    width: 100%;
+    height: 44rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+#slider div.selected { 
+    display: block;
+    transition: 1s;
+}
+#slider div{
+  
+    width: 100%;
+
+    display: none;
+    height: 37rem;
+    justify-content: space-between;
+    align-items: center;
+}
+#slider img{
+    width: 100%;
+    height: 44rem;
+}
+
+#slider div.selected { 
+    display: block;
+    transition: 1s;
+}
+texto h1{
+    width: 60%;
+    color: white;
+    font-size: 56px;
+}
+texto{
+    position: absolute;
+    display: block;
+    height: 116%;
+    background: linear-gradient(to right, #000c, rgb(0 0 0 / 4%));
+    display: flex;
+    width: 100%;
+    padding: 4rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+container{
+    display: block;
+}
+.itemTitulo{
+    display: flex;
+    position: relative;
+    right: 100px;
+    padding: 5rem 2rem 2rem 2rem;
+    width: 100%;
+}
+/* Teste */
+
+.caixaImg img{
+    width: 100%;
+    filter: brightness(50%);
+    height: 44rem;
+}
+
+/* FIM TESTE */
+.img-main{
+    width: 100%;
+    height:31.5rem;
+    background-repeat: no-repeat;
+    background-image: url('Imagens/jovem.jpeg');
+}
+
+.block{
+    display: block!important;
+}
+.container-vagas{
+    padding: 49px 23px 80px 23px;
+}
+.bg{ 
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+.bg-color{
+    position: relative;
+    height: 2rem;
+}
+
+.borda{
+    border-bottom: 4px solid black;
+}
+.vagas:hover{
+    transform: scale(1.05);
+}
+.infor{
+    position: relative;
+    padding: 7px;
+}
+.vagas:hover .bg{
+    animation-name: caixa;
+    background-color: #f78e0c;
+    animation-duration: 0.6s;
+}
+@keyframes caixa {
+    0% {background-color: white; width: 0%;}
+    100% {background-color: #f78e0c;width: 100%;}
+}
+
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.caixa-vagas{
+    padding: 9px 9px 9px 17px;
+    margin-bottom: 110px;
+    width: 100%;
+}
+
+#departamento{
+    text-align: center;
+    
+}
+#tarefas{
+    font-weight: 500;
+}
+.titulo-vaga{
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+.container-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+    padding: 2rem;
+    justify-content: center;
+}
+.container-flex-primeiro{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+    align-items: center;
+}
+.informacoes{
+    margin-top: 7px;
+}
+.informacoes p{
+    display: inline;
+}
+.espaco{
+    margin-top: 20px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vagas h3{
+    text-align: center;
+    margin-bottom: 12px;
+    font-size: 33px;
+}
+
+.vagas{
+    width: 24.5rem;
+    font-size: 18px;
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.roda{
+    width: 50px;
+    height: 50px;
+    background-color: #f78e0c;
+    border-radius: 100%;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+/* FOOTER */
+footer{
+    position: absolute;
+    width: 100%;
+}
+
+.caixaRodape {
+    width: 100%;
+    display: flex;
+    padding: 4% 1.5%;
+    height: 40vh;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f78e0c;
+    border-top: 1px solid black;
+}
+.caixaRodape .logo{
+    width: 25vw;
+    height: 14vh;
+}
+.footer-inform{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.linha-mobile{
+    display: none;
+}
+.caixaRodape ul{
+    list-style: none;
+}
+.caixaRodape .footer-inform h4{
+    font-size: calc(5pt + 1vw);
+}
+.caixaRodape ul li{
+    font-size: 9pt;
+}
+
+
+@media (max-width: 940px){
+    .caixaRodape{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    padding: 4% 1.5%;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f78e0c;
+    border-top: 1px solid black;
+    flex-wrap: wrap;
+    }
+    .caixaRodape .footer-inform h4 {
+        font-size: calc(5pt + 2.5vw);
+        text-align: center;
+    }
+    .caixaRodape ul li {
+        font-size: 13pt;
+        text-align: center;
+    }
+    .footer-inform {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+    .estudante, .empresa {
+        height: 46vh;
+    }
+    .opacity-estudante {
+        height: 46vh;
+    }
+    .opacity-empresa {
+        
+        height: 46vh;
+       
+    }   
+    .caixa-box{
+        height: 78vh;
+        width: 44vw;
+    }
+}
+.divisao{
+    background-color: black;
+    margin: 45px 0;
+    width: 100%;
+}
+
+/* .container-flex-primeiro .vagas:first-child .semVaga{
+    display: block!important;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    background-color: rgb(241, 241, 241);
+}
+.container-flex-primeiro .vagas .semVaga{
+    display: none;
+} */
+.container-flex-primeiro #Ta:last-child{
+    display: block!important;
+    font-size: 15pt;
+    height: 3rem;
+    padding: 5px;
+    text-align: center;
+    background-color: #e1e0df;;
+}
+
+.container-flex-primeiro #Ta{
+    display: none;
+} 

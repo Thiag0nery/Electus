@@ -1,0 +1,186 @@
+/* Geral codicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.vazia{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mensagem{
+    position:absolute;
+    z-index: 99;
+    width: 15rem;
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 1%;
+    text-align: center;
+    margin: 0 auto;
+    height: 5rem;
+}
+html,
+body {
+    height: 100%;
+
+}
+
+header {
+    width: 100%;
+    height: 13.5vh;
+    background-color: #f78e0c;
+    padding: 10px 4rem;
+    display: flex;
+    box-shadow: 0 0 1rem 0.3rem black;
+    z-index: 1;
+    border-bottom: 1px solid black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    background-image: url('../Imagens/Logo.png');
+    width: 12vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 11vh;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+}
+
+header li a:hover {
+    font-weight: 800;
+}
+
+/* Main */ 
+
+
+.box1{
+    height: 50vh;
+    background-color:  rgb(241, 241, 241);
+}
+.box2{
+
+    height:40vh;
+    background-color: #f78e0c;
+}
+
+.container-box {
+    position: relative;
+    top: -40vh;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+hr{
+    border: 1px solid black;
+}
+.roda{
+    margin: 10px;
+    background-color: #f78e0c;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: block;
+}
+.box {
+    width: 35vw;
+    text-align: center;
+    background-color: white;
+
+}
+
+.title-box {
+    font-weight: bold;
+    padding: 15px 0 20px 0;
+}
+
+.box h2 {
+    margin-top: -25px;
+}
+
+.itens-box {
+    text-align: left;
+    padding: 20px 40px;
+}
+
+.label-input {
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+
+
+}
+
+.inputUser {
+    width: 100%;
+    padding: 0 5px;
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+    position: relative;
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+#cpf {
+    width: 100%;
+}
+
+.btn-logar {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    margin-top: 3%;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #f78e0c;
+
+}
+
+.btn-logar:hover {
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+.cadastrese {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#nova-senha {
+    width: 100%;
+}
+
+
+.margin {
+    margin-top: 10%;
+
+}
